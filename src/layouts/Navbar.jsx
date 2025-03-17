@@ -26,7 +26,7 @@ const Navbar = () => {
               </div>
             </a>
             <div
-              className={`absolute bg-white shadow-lg top-14 w-full overflow-hidden ${
+              className={`absolute z-[999] bg-white shadow-lg top-14 w-full overflow-hidden ${
                 menuOpen ? "scale-y-100" : "scale-y-0"
               } origin-top right-0 px-8 py-7 flex flex-col gap-3 transition-all duration-300 ease-in-out
             md:static md:scale-y-100 md:w-fit md:shadow-none md:p-0 md:flex md:flex-row md:items-center md:gap-3`}
