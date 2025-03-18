@@ -1,9 +1,12 @@
 import React from "react";
 import { GrCertificate } from "react-icons/gr";
+import CategoryList from "../components/CategoryList";
+import CoursesList from "../components/CoursesList";
 
 const Home = () => {
   return (
     <>
+      {/* hero start */}
       <section className="">
         <div className="container">
           <div className="flex flex-wrap items-center gap-y-6">
@@ -41,6 +44,75 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="bg-[#f9fafc] my-4">
+        <div className="container">
+          <div className="flex flex-wrap gap-y-3 justify-between items-center">
+            <div className="w-[49%] md:w-[23%]">
+              <div className="text-center space-y-1">
+                <h3 className="text-xl font-semibold">250+</h3>
+                <p className="text-sm text-gray-600">
+                  Courses by our best mentor
+                </p>
+              </div>
+            </div>
+            <div className="w-[2%] flex items-center justify-center overflow-hidden">
+              <span className="w-[2px] h-[50px] bg-[#e1e8f0]"></span>
+            </div>
+            <div className="w-[49%] md:w-[23%]">
+              <div className="text-center space-y-1">
+                <h3 className="text-xl font-semibold">1000+</h3>
+                <p className="text-sm text-gray-600">
+                  Courses by our best mentor
+                </p>
+              </div>
+            </div>
+            <div className="w-[2%] hidden md:flex items-center justify-center overflow-hidden">
+              <span className="w-[2px] h-[50px] bg-[#e1e8f0]"></span>
+            </div>
+            <div className="w-[49%] md:w-[23%]">
+              <div className="text-center space-y-1">
+                <h3 className="text-xl font-semibold">15+</h3>
+                <p className="text-sm text-gray-600">
+                  Courses by our best mentor
+                </p>
+              </div>
+            </div>
+            <div className="w-[2%] flex items-center justify-center overflow-hidden">
+              <span className="w-[2px] h-[50px] bg-[#e1e8f0]"></span>
+            </div>
+            <div className="w-[49%] md:w-[23%]">
+              <div className="text-center space-y-1">
+                <h3 className="text-xl font-semibold">2400+</h3>
+                <p className="text-sm text-gray-600">
+                  Courses by our best mentor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* hero end */}
+
+      {/* category start */}
+      <section className="my-[2rem]">
+        <div className="container">
+          <h3 className="text-lg font-semibold">Top Categories</h3>
+          <CategoryList />
+        </div>
+      </section>
+      {/* category end */}
+
+      {/* courses start */}
+      <section className="my-[2rem]">
+        <div className="container">
+          <div className="flex justify-between items-center">
+            <h3 className="text-lg font-semibold">Top Courses</h3>
+            <p>See All</p>
+          </div>
+          <CoursesList />
+        </div>
+      </section>
+      {/* courses end */}
     </>
   );
 };
