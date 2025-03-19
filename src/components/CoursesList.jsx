@@ -71,10 +71,11 @@ const CoursesList = () => {
         {courses.map((item, index) => (
           <div
             key={index}
-            className="w-full px-4 py-2 md:w-[48%] md:px-0 lg:w-[24%]"
+            className="w-full px-2 xs:px-4 py-2 md:w-[48%] md:px-0 lg:w-[24%]"
           >
             <a className="group" href="">
               <div
+                title={item.title}
                 className="flex items-center justify-center border-2 border-gray-300 p-4 rounded-xl
                 group-hover:border-primary group-hover:bg-[#e0f2fe] transition-all duration-300 ease-in-out"
               >
