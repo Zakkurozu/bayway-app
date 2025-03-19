@@ -2,6 +2,7 @@ import React from "react";
 import { GrCertificate } from "react-icons/gr";
 import CategoryList from "../components/CategoryList";
 import CoursesList from "../components/CoursesList";
+import MentorsList from "../components/MentorsList";
 
 const Home = () => {
   return (
@@ -113,6 +114,15 @@ const Home = () => {
         </div>
       </section>
       {/* courses end */}
+
+      {/* mentors start */}
+      <section className="my-[2rem]">
+        <div className="container">
+          <h3 className="text-lg font-semibold">Top Mentors</h3>
+          <MentorsList />
+        </div>
+      </section>
+      {/* mentors end */}
     </>
   );
 };
