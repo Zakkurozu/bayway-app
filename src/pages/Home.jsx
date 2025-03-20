@@ -3,6 +3,8 @@ import { GrCertificate } from "react-icons/gr";
 import CategoryList from "../components/CategoryList";
 import CoursesList from "../components/CoursesList";
 import MentorsList from "../components/MentorsList";
+import { FaArrowRight } from "react-icons/fa";
+import ReviewList from "../components/ReviewList";
 
 const Home = () => {
   return (
@@ -20,8 +22,8 @@ const Home = () => {
                 that education is the key to personal and professional growth,
                 and we're here to guide you on your journey to success.{" "}
               </p>
-              <button className="py-3 px-5 bg-primary text-white font-medium rounded-md">
-                Start your instructor journey
+              <button className="py-3 px-5 border-2 border-transparent bg-primary text-white font-medium rounded-lg capitalize hover:bg-[#e0f2fe] hover:text-primary hover:border-primary transition-all duration-300 ease-in-out">
+                Start your journey
               </button>
             </div>
             <div className="w-full order-1 md:order-2 md:w-1/2">
@@ -123,6 +125,74 @@ const Home = () => {
         </div>
       </section>
       {/* mentors end */}
+
+      {/* reviews start */}
+      <section className="my-[2rem] bg-[#f9fafc] py-[2rem]">
+        <div className="container">
+          <ReviewList />
+        </div>
+      </section>
+      {/* reviews end */}
+
+      {/* additional section start */}
+      <section className="my-[2rem]">
+        <div className="container">
+          <div className="md:w-[90%] mx-auto space-y-[3rem]">
+            <div className="flex flex-wrap items-center gap-y-4">
+              <div className="w-full md:w-1/2">
+                <div className="relative w-[60%] me-auto md:w-[70%]">
+                  <img className="mx-auto" src="/teacher.svg" alt="" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">
+                    Become an instructor
+                  </h3>
+                  <p>
+                    Instructors from around the world teach millions of students
+                    on Byway. We provide the tools and skills to teach what you
+                    love.
+                  </p>
+                  <button className="bg-black border-[1px] border-transparent rounded-lg px-3 py-2 group hover:bg-transparent hover:border-black transition-all duration-300 ease-in-out">
+                    <div className="text-white text-base flex items-center gap-x-2 group-hover:text-black transition-all duration-300 ease-in-out">
+                      <span className="capitalize">
+                        start your instructor journey
+                      </span>
+                      <FaArrowRight />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-y-4">
+              <div className="w-full md:w-1/2 md:order-2">
+                <div className="relative w-[72%] md:ms-auto md:w-[80%]">
+                  <img className="mx-auto" src="/student.svg" alt="" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 md:order-1">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">
+                    Transform your life through education
+                  </h3>
+                  <p>
+                    Learners around the world are launching new careers,
+                    advancing in their fields, and enriching their lives.
+                  </p>
+                  <button className="bg-black border-[1px] border-transparent rounded-lg px-3 py-2 group hover:bg-transparent hover:border-black transition-all duration-300 ease-in-out">
+                    <div className="text-white text-base flex items-center gap-x-2 group-hover:text-black transition-all duration-300 ease-in-out">
+                      <span className="capitalize">checkout course</span>
+                      <FaArrowRight />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* additional section end */}
     </>
   );
 };
