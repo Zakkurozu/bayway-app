@@ -34,8 +34,9 @@ const Navbar = () => {
               <h1 className="text-xl font-semibold md:hidden">Menu</h1>
               <hr className="md:hidden" />
               <div
-                className="flex items-center gap-x-1 w-full border-2 border-transparent p-2 rounded-md hover:bg-gray-200  hover:border-secondary transition-all duration-200 ease-in-out
-              md:p-0 md:w-fit"
+                className="flex items-center gap-x-1 w-full border-2 border-transparent p-2 rounded-md
+              md:p-0 md:w-fit
+              hover:bg-gray-200  hover:border-secondary md:hover:bg-transparent md:hover:border-transparent md:hover:text-primary transition-all duration-200 ease-in-out"
               >
                 <GoHomeFill className="text-xl md:hidden" />
                 <NavLink
@@ -47,8 +48,9 @@ const Navbar = () => {
                 </NavLink>
               </div>
               <div
-                className="flex items-center gap-x-1 w-full border-2 border-transparent p-2 rounded-md hover:bg-gray-200  hover:border-secondary transition-all duration-200 ease-in-out
-              md:p-0 md:w-fit"
+                className="flex items-center gap-x-1 w-full border-2 border-transparent p-2 rounded-md
+              md:p-0 md:w-fit
+              hover:bg-gray-200  hover:border-secondary md:hover:bg-transparent md:hover:border-transparent md:hover:text-primary transition-all duration-200 ease-in-out"
               >
                 <MdCategory className="text-xl md:hidden" />
                 <NavLink
