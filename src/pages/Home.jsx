@@ -5,6 +5,7 @@ import CoursesList from "../components/CoursesList";
 import MentorsList from "../components/MentorsList";
 import { FaArrowRight } from "react-icons/fa";
 import ReviewList from "../components/ReviewList";
+import TopCourse from "../components/TopCourse";
 
 const Home = () => {
   return (
@@ -112,7 +113,7 @@ const Home = () => {
             <h3 className="text-lg font-semibold">Top Courses</h3>
             <p>See All</p>
           </div>
-          <CoursesList />
+          <TopCourse />
         </div>
       </section>
       {/* courses end */}
