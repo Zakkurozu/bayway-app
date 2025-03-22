@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
 import Home from "./pages/Home";
-import Category from "./pages/Category";
 import Course from "./pages/Course";
+import Courses from "./pages/Courses";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path={"/"} element={<Home />} />
-        <Route path={"/courses"} element={<Category />} />
+        <Route path={"/courses"} element={<Courses />} />
         <Route path={"/course/:id/:name"} element={<Course />} />
       </Routes>
       <Footer />
