@@ -6,7 +6,7 @@ const CoursesCard = (props) => {
 
   return (
     <>
-      <a className="group" href="">
+      <a className="group" href={`/courses/${item.slug}`}>
         <div
           title={item.title}
           className="flex items-center justify-center border-2 border-gray-300 p-4 rounded-xl
@@ -32,8 +32,16 @@ const CoursesCard = (props) => {
               </div>
               <div className="flex gap-3 text-sm font-medium lg:text-xs lg:gap-1">
                 <span>{item.hours} Total Hours.</span>
-                <span>{item.Lectures} Lectures</span>
-                <span>{item.level}</span>
+                <span>{item.lectures} Lectures</span>
+                <span
+                  className={`
+                    ${item.level === "Beginner" && "text-green-500"} 
+                    ${item.level === "Intermediate" && "text-yellow-500"} 
+                    ${item.level === "Advanced" && "text-red-500"}
+                    `}
+                >
+                  {item.level}
+                </span>
               </div>
               <div className="flex items-center gap-x-2">
                 {item.discount === 100 ? (
